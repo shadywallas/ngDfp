@@ -302,6 +302,11 @@ angular.module('ngDfp', [])
           pageTargeting[key] = value;
         },
 
+        flushPageTargeting: function (key, value) {
+          pageTargeting = {};
+        },
+
+
         getSlot: function (id) {
           return deferred.promise.then(function () {
             // Return the size of the ad. The directive should construct
