@@ -302,7 +302,7 @@ angular.module('ngDfp', [])
           pageTargeting[key] = value;
         },
 
-        flushPageTargeting: function (key, value) {
+        flushPageTargeting: function () {
           pageTargeting = {};
         },
 
