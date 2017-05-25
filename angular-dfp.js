@@ -391,8 +391,10 @@ angular.module('ngDfp', [])
                     });
                 },
                 refreshAll: function () {
-                    googletag.cmd.push(function () {
-                        $window.googletag.pubads().refresh();
+                    return deferred.promise.then(function () {
+                        googletag.cmd.push(function () {
+                            $window.googletag.pubads().refresh();
+                        });
                     });
                 }
             };
