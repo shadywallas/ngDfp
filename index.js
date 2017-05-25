@@ -1,2 +1,2 @@
-require('./angular-dfp.min');
+require('./angular-dfp');
 module.exports = 'ngDfp';
